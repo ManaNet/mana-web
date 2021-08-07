@@ -127,8 +127,11 @@ function beautify($n)
                             <div class="text-section">
                                 <h1 class="font-lato bold size-60">Waifu-dose!</h1>
                                 <p class="font-lato light size-25">Build a strong gallery of waifu images by enabling Mana's Waifu World<br class="hide-on-mobile"> which allows you to receive waifu images every single hour!</p>
-                                <a href="https://manabot.fun/invite" class="invite-button font-lato bold">Invite
+                                <div class="invite-button-outer">
+                                    <a href="https://manabot.fun/invite" class="invite-button font-lato bold">Invite
                                         Now</a>
+                                    <span class="invite-button-bottom"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -138,8 +141,11 @@ function beautify($n)
                             <div class="text-section">
                                 <h1 class="font-lato bold size-60">Yuriiification!</h1>
                                 <p class="font-lato light size-25">Travel to a universe filled with Yuri by enabling Yuriverse <br class="hide-on-mobile"> which allows you to receive yuri images every hour!</p>
-                                <a href="https://manabot.fun/invite" class="invite-button font-lato bold">Invite
+                                <div class="invite-button-outer">
+                                    <a href="https://manabot.fun/invite" class="invite-button font-lato bold">Invite
                                         Now</a>
+                                    <span class="invite-button-bottom"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -149,8 +155,11 @@ function beautify($n)
                             <div class="text-section">
                                 <h1 class="font-lato bold size-60">Kitsu-nyaaa!</h1>
                                 <p class="font-lato light size-25">Experience the library of anime images of Mana <br class="hide-on-mobile">that ranges from kitsunes, nekos to even usagis!</p>
-                                <a href="https://manabot.fun/invite" class="invite-button font-lato bold">Invite
+                                <div class="invite-button-outer">
+                                    <a href="https://manabot.fun/invite" class="invite-button font-lato bold">Invite
                                         Now</a>
+                                    <span class="invite-button-bottom"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
