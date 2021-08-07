@@ -1,6 +1,12 @@
 <?php
 
+## Wanna know what's funny?
+## Cloudflare Pages requires this to be called 404.
+## Because you can't set a try_files config like in NGINX.
+## So I am instead forcing it to go here on a 404.
+
 use Dotenv\Dotenv;
+use Pecee\Http\Request;
 use Pecee\SimpleRouter\SimpleRouter;
 
 ## Read the .env file and also import autoloader from composer.
@@ -50,6 +56,19 @@ SimpleRouter::get('/shard/{shard}', function ($shard){
             echo json_encode(['status' => 'outage']);
         }
     }
+});
+
+
+## We want to handle actual 404 requests towards this side.
+SimpleRouter::error(function(Request $request, \Exception $exception) {
+
+    switch($exception->getCode()) {
+        case 404:
+            response()->redirect('https://manabot.fun');
+        case 403:
+            response()->redirect('https://manabot.fun');
+    }
+    
 });
 
 SimpleRouter::start();
