@@ -1,0 +1,19 @@
+{
+    "name": "mihou/mana-web",
+    "description": "The official Mana website.",
+    "type": "project",
+    "require": {
+        "pecee/simple-router": "4.3.2.1",
+        "vlucas/phpdotenv": "^5.3",
+        "rmccue/requests": "^1.8",
+        "catfan/medoo": "^2.1"
+    },
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Mihou",
+            "email": "kokocrunchsh@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
