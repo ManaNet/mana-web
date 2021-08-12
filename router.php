@@ -46,7 +46,7 @@ SimpleRouter::get('/shard/{shard}', function ($shard) {
     } else {
         $response = json_decode($request->body, true);
         if ($response['status'] == null) {
-            echo json_encode(['status' => 'operational', 'unavailable' => $response['unavailable'], 'servers' => $response['servers'], 'channels' => $response['channels'], 'cachedUsers' => $response['cachedUsers'], 'uptime' => $response['uptime'], 'cluster' => $response['cluster'], 'system' => $response['system']]);
+            echo json_encode(['status' => 'operational', 'unavailable' => $response['unavailable'], 'servers' => $response['servers'], 'channels' => $response['channels'], 'users' => $response['users'], 'uptime' => $response['uptime'], 'cluster' => $response['cluster'], 'system' => $response['system']]);
         } else {
             echo json_encode(['status' => 'outage']);
         }
