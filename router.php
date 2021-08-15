@@ -20,6 +20,11 @@ SimpleRouter::get('/wiki', function () {
     header('Location: https://wiki.manabot.fun');
 });
 
+## The link to the support discord.
+SimpleRouter::get('/support', function () {
+    header('Location: https://discord.gg/9FefYq4p83');
+});
+
 ## If you want to subscribe to the bot.
 SimpleRouter::get('/plans', function () {
     header('Location: https://patreon.com/manabot');
